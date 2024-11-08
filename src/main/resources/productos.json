@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "nombre": "Macbook Air M2",
+    "precio": 999.99,
+    "stock": 5
+  },
+  {
+    "id": 3,
+    "nombre": "Teclado mecanico Logitech",
+    "precio": 299.99,
+    "stock": 8
+  }
+]
