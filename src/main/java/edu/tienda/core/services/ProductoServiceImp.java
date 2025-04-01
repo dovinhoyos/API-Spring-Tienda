@@ -9,7 +9,7 @@ import java.util.List;
 
 @Service("MEMORY")
 @ConditionalOnProperty(value = "productos.estrategia", havingValue = "EN_MEMORIA")
-public class ProductoServiceImp implements IProductoService{
+public class ProductoServiceImp implements ProductoService {
 
     List<Producto> productos = Arrays.asList(
             new Producto(1, "Macbook Air M2", 999.99, 5),

@@ -1,8 +1,6 @@
 package edu.tienda.core.services;
 
-import com.fasterxml.jackson.core.exc.StreamReadException;
 import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.DatabindException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import edu.tienda.core.domain.Producto;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
@@ -15,7 +13,7 @@ import java.util.List;
 @Primary
 @Service("JSON")
 @ConditionalOnProperty(value = "productos.estrategia", havingValue = "EN_JSON")
-public class ProductosServiceJsonImp implements IProductoService{
+public class ProductosServiceJsonImp implements ProductoService {
 
     @Override
     public List<Producto> getProductos() {

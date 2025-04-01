@@ -4,7 +4,7 @@ import edu.tienda.core.domain.Producto;
 
 import java.util.List;
 
-public interface IProductoService {
+public interface ProductoService {
 
     List<Producto> getProductos();
 }
